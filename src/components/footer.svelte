@@ -15,15 +15,7 @@
     font-size: $mini-font-size;
     padding-top: 1rem;
     padding-bottom: 0.25rem;
-    &::after{
-      content: "";
-      position: absolute;
-      top: 0px;
-      height: 1px;
-      width: 100%;
-      background-color: white;
-      transform: scaleX(1.2);
-    }
+    border-top: 1px solid white;
     & p{
       padding-top: 0.5rem;
     }
