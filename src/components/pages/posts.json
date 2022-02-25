@@ -6,14 +6,14 @@
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... </p><img src='/static/KB.svg'/> <p>and some text </p>"
+        "content":"<p>Just some normal paragraph with an... </p><img src='/KB.svg'/> <p>and some text </p>"
       },
       {
         "part": "Part 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/static/KB.svg'/> and some text </p>"
+        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
       }
     ],
     "a":"Read more"
@@ -25,14 +25,14 @@
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/static/KB.svg'/> and some text </p>"
+        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
       },
       {
         "part": "Partie 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/static/KB.svg'/> and some text </p>"
+        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
       }
     ],
     "a":"Lire plus"
