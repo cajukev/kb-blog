@@ -14,14 +14,6 @@
       useLang = en.posts[post];
       break;
   }
-  onMount(()=>{
-    let elements = document.getElementsByClassName("post"+lang+post+"Img");
-
-    console.log(elements)
-    for(let i=0; i<useLang.medias.length; i++){
-      elements[i].src = "/"+useLang.medias[i].media
-    }
-  })
 </script>
 
 <PostHeader post={post} lang={lang}></PostHeader>
@@ -30,7 +22,7 @@
   <div class="content">
     {@html useLang.content}
   </div>
-
+  
 </div>
 
 <style lang="scss">
@@ -39,7 +31,9 @@
     border-right: 1px solid white;
     max-width: 40rem;
     & .content{
-      
+      & :global(img){
+        width: 100%;
+      }
       
     }
   }
