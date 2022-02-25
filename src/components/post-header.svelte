@@ -2,7 +2,7 @@
   export let post;
   export let lang;
   import { en, fr } from "./header.json";
-  import { en as en2, fr as fr2 } from "./pages/index.json";
+  import { en as en2, fr as fr2 } from "./pages/posts.json";
   import LangPicker from "./lang-picker.svelte";
   const langs = ["en", "fr"];
   let useLang;
