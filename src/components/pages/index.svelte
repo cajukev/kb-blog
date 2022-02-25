@@ -1,7 +1,7 @@
 <script>
   export let lang;
   const langs = ["en", "fr"];
-  import { en, fr } from "./index.json";
+  import { en, fr } from "./posts.json";
   let useLang;
   switch (lang) {
     case "fr":

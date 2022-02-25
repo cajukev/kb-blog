@@ -5,8 +5,9 @@
   import { page } from "$app/stores";
   import {onMount} from 'svelte'
   const langs = ["en", "fr"];
-  let url = $page.url.toString().split("/");
-  let option;
+  let url;
+  $: url = $page.url.toString().split("/");
+  console.log(lang)
   
 
   let langChange = () => {

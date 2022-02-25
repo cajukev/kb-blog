@@ -1,4 +1,8 @@
 <script>
-  import PostHeader from "../../components/post-header.svelte"
+  import Post from '/src/components/pages/post.svelte';
+  import {lang, page} from '/src/stores'
+  $lang = "en"
+  $page = ""
 </script>
-<PostHeader post={0} lang={"en"}></PostHeader>
+  
+<Post lang={'en'} post={0}></Post>

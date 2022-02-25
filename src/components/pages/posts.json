@@ -6,14 +6,20 @@
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content": {}
+        "content":"<p>Just some normal paragraph with an... <img class='posten0Img'/> and some text </p>",
+        "medias": [
+          {"media":"KB.svg"}
+        ]
       },
       {
         "part": "Part 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content": {}
+        "content":"<p>Just some normal paragraph with an... <img class='posten1Img'/> and some text </p>",
+        "medias": [
+          {"media":"KB.svg"}
+        ]
       }
     ],
     "a":"Read more"
@@ -25,14 +31,20 @@
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content": {}
+        "content":"<p>Just some normal paragraph with an... <img class='postfr0Img'/> and some text </p>",
+        "medias": [
+          {"media":"KB.svg"}
+        ]
       },
       {
         "part": "Partie 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content": {}
+        "content":"<p>Just some normal paragraph with an... <img class='postfr1Img'/> and some text </p>",
+        "medias": [
+          {"media":"KB.svg"}
+        ]
       }
     ],
     "a":"Lire plus"

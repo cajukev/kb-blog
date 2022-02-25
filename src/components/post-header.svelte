@@ -3,8 +3,8 @@
   export let lang;
   import { en, fr } from "./header.json";
   import { en as en2, fr as fr2 } from "./pages/index.json";
-  import LangPicker from './lang-picker.svelte'
-const langs = ["en", "fr"];
+  import LangPicker from "./lang-picker.svelte";
+  const langs = ["en", "fr"];
   let useLang;
   let useLang2;
   switch (lang) {
@@ -30,9 +30,9 @@ const langs = ["en", "fr"];
   </svg>
   <div class="links">
     <a href={lang == "en" ? "/" : "/fr"}>
-      {useLang.return}
+      {useLang.title}
     </a>
-    <LangPicker lang={lang}></LangPicker>
+    <LangPicker {lang} />
   </div>
 
   <nav>
@@ -46,11 +46,19 @@ const langs = ["en", "fr"];
 
 <style lang="scss">
   .post-header-container {
-    & .links{
-      padding: 0 1rem;
+    & .links {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid white;
+      & a {
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 2rem;
+        font-size: $subheader-font-size;
+      }
     }
     & nav {
-      padding: 0 1rem;
+      padding: 0.5rem 1.5rem;
+      border-bottom: 1px solid white;
       display: flex;
       flex-direction: row;
       & a {
@@ -58,12 +66,14 @@ const langs = ["en", "fr"];
         align-items: center;
         justify-content: center;
         background-color: white;
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: $subheader-font-size;
+        text-decoration: none;
         border-radius: 50%;
         margin-right: 1rem;
-        filter:drop-shadow(0px 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1));
-        &.active{
+        filter: drop-shadow(0px 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1));
+        &.active {
           background-color: $accent-color;
         }
       }
