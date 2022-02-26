@@ -46,6 +46,7 @@
 
 <style lang="scss">
   .post-header-container {
+    max-width: 100vw;
     & .links {
       padding: 1rem 1.5rem;
       border-bottom: 1px solid white;

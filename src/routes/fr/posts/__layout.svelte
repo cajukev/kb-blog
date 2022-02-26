@@ -6,22 +6,10 @@
 </script>
 
 <PostHeader post={$page} lang={"fr"} />
-<div class="post-container">
-  <PageTransition {$page}>
+<div class="post-wrapper">
     <slot />
-  </PageTransition>
 </div>
 
 <style lang="scss">
-  .post-container {
-    padding: 1rem 1.5rem;
-    border-right: 1px solid white;
-    width: 35rem;
-    max-width: 100%;
-    & .content {
-      & :global(img) {
-        width: 100%;
-      }
-    }
-  }
+  
 </style>
