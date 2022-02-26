@@ -1,8 +1,6 @@
 <script>
-  import Post from '/src/components/pages/post.svelte';
-  import {lang, page} from '/src/stores'
-  $lang = "fr"
-  $page = ""
+  import {page} from '/src/stores';
+  $page = 0;
 </script>
-  
-<Post lang={'fr'} post={0}></Post>
+
+# Hey

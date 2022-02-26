@@ -1,8 +1,8 @@
 <script>
-  import Post from '/src/components/pages/post.svelte';
-  import {lang, page} from '/src/stores'
-  $lang = "en"
-  $page = ""
+  import {page} from '/src/stores';
+  $page = 1;
 </script>
-  
-<Post lang={'en'} post={1}></Post>
+
+# Yo
+
+<img src="/KB.svg"/>

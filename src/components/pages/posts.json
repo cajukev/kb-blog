@@ -6,14 +6,14 @@
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... </p><img src='/KB.svg'/> <p>and some text </p>"
+        "content":"<p>Just some normal paragraph with a <span class='hoverable'>Hoverable element</span> and some text and a <span class='hoverable'>Hoverable element</span></p>"
       },
       {
         "part": "Part 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
         "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
+        "content":"<p>Just some normal paragraph with a <span class='hoverable'>Hoverable element</span> and some text and a <span class='hoverable'>Hoverable element</span></p>"
       }
     ],
     "a":"Read more"
