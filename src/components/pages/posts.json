@@ -3,38 +3,38 @@
     "posts": [
       {
         "part": "Introduction",
-        "title": "What is an independant developer?",
-        "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
-        "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with a <span class='hoverable'>Hoverable element</span> and some text and a <span class='hoverable'>Hoverable element</span></p>"
+        "title": "Who am I as a developer?",
+        "tags": "Other than a really cool guy",
+        "intro": "Greetings! My name is Kevin Brousseau and I am a web developer. Four years ago I started learning modern web development and in this blog I will write about the things I've learned throughout these formative years. Read on and hopefully I can teach you a thing or two..."
       },
       {
         "part": "Part 1",
-        "title": "What is an independant developer?",
+        "title": "What is modern web development?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
-        "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with a <span class='hoverable'>Hoverable element</span> and some text and a <span class='hoverable'>Hoverable element</span></p>"
+        "intro": "I present myself as an modern web developer. This means that I use the technologies and techniques required to create websites easily and quickly, with better performance than 99.9% of today's websites."
       }
     ],
-    "a":"Read more"
+    "a":"Read more",
+    "soon":"Coming soon",
+    "part":"Part"
   },
   "fr": {
     "posts": [
       {
         "part": "Introduction",
-        "title": "What is an independant developer?",
-        "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
-        "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
+        "title": "Qui suis-je comme développeur?",
+        "tags": "Autre qu'un gars vraiment cool",
+        "intro": "Je me présente comme développeur web moderne. Celà veut dire que j'utilise les technologies et techniques requises pour créer des sites web facilement et rapidement, plus performants que 99.9% des sites aujourd'hui."
       },
       {
         "part": "Partie 1",
         "title": "What is an independant developer?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
-        "intro": "I present myself as an independant developer...",
-        "content":"<p>Just some normal paragraph with an... <img src='/KB.svg'/> and some text </p>"
+        "intro": "I present myself as an independant developer..."
       }
     ],
-    "a":"Lire plus"
+    "a":"Lire plus",
+    "soon":"Bientôt",
+    "part":"Partie"
   }
 }

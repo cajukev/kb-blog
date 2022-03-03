@@ -1,8 +1,8 @@
 <footer>
-  <p>© KBweb, 2022</p>
+  <p>© Kevin Brousseau, 2022</p>
   <p>Châteauguay, Quebec, Canada</p>
   <p>514-550-7051</p>
-  <p>kbweb98@gmail.com</p>
+  <p>kevin.brousseau98@gmail.com</p>
 </footer>
 
 <style lang="scss">
@@ -13,8 +13,7 @@
     justify-content: center;
     align-items: center;
     font-size: $mini-font-size;
-    padding-top: 1rem;
-    padding-bottom: 0.25rem;
+    padding: 1rem 0 0.25rem $page-ml;
     border-top: 1px solid white;
     & p{
       padding-top: 0.5rem;

@@ -1,10 +1,12 @@
 {"en":{
-  "title":"The web according to an independant developer",
+  "title":"Lessons in modern web development",
   "desc":"Blog written by Kevin Brousseau",
   "return":"Return"
+
 },
 "fr":{
-  "title":"Le web selon un Développeur Indépendant",
+  "title":"Des leçons sur le développement web moderne",
   "desc":"Blog écrit par Kevin Brousseau",
   "return":"Retour"
+
 }}

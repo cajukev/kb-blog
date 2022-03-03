@@ -29,9 +29,12 @@
       </div>
     </div>
   {/each}
-
-  <br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br
-  />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c<br />c
+  <div class="post">
+    <div class="showcase">
+      <p class="part">{useLang.part + " " + useLang.posts.length}</p>
+      <p class="title">{useLang.soon}</p>
+    </div>
+  </div>
 </main>
 
 <style lang="scss">
@@ -57,13 +60,17 @@
       }
       & .preview {
         margin-top: 1rem;
+        max-width: 35rem;
+        & .intro{
+          margin-bottom: 0.5rem;
+        }
       }
     }
     @media (min-width: $breakpoint-3) {
       & .post {
         padding: 0;
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 25rem 1fr;
         & .showcase {
           padding: $page-ml;
           border-right: 1px solid white;
@@ -74,6 +81,7 @@
         & .preview {
           padding: $page-ml;
           margin-top: 0;
+          
         }
       }
     }

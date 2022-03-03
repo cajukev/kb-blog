@@ -16,6 +16,7 @@ $base-font-size: clamp(14px, 1.6vw, 22px);
 $mini-font-size: clamp(12px, 1.2vw, 16px);
 
 $page-ml: 1.5rem;
+$text-width: 35rem;
 
 /* Breakpoints */
 
@@ -66,8 +67,10 @@ $breakpoint-6: 1536px;
   background-color: $bg-color;
   font-family: $other-font;
   font-size: $base-font-size;
+  line-height: 140%;
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 :global(body) {
   max-width: 100vw;
@@ -89,10 +92,11 @@ $breakpoint-6: 1536px;
   text-shadow: 0px 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1);
 }
 
+/* POST STYLING */
 :global(.post-wrapper) {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   border-right: 1px solid white;
-  max-width: 35rem;
+  max-width: $text-width;
   width: 100%;
   & :global(.post-container) {
     & :global(.img-container) {
@@ -112,8 +116,22 @@ $breakpoint-6: 1536px;
   & :global(.part) {
     font-weight: 300;
   }
-  & :global(p.title) {
-    margin-top: 1rem;
+  & :global(h2) {
+    font-weight: 400;
+    margin-top: 0.25rem;
+    font-size: $subheader-font-size;
+    margin-bottom: 2rem;
+  }
+  & :global(h3) {
+    font-size: $base-font-size;
+  }
+  & :global(p.media-info){
+    font-size: $mini-font-size;
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+  & :global(.content-spacing){
+    margin-top: 1.5rem;
   }
 }
 @keyframes grow1 {
@@ -133,3 +151,8 @@ $breakpoint-6: 1536px;
     transform: translate(40%, 30%);
   }
 }
+
+@keyframes lineIn {
+  0% { stroke-dashoffset: 0 }
+  100% { stroke-dashoffset:-708.246 }
+} 
