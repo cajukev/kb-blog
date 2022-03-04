@@ -4,6 +4,7 @@
   import { en, fr } from "./header.json";
   import { en as en2, fr as fr2 } from "./pages/posts.json";
   import LangPicker from "./lang-picker.svelte";
+  import PostNav from "./post-nav.svelte";
   const langs = ["en", "fr"];
   let useLang;
   let useLang2;
@@ -20,7 +21,6 @@
 </script>
 
 <div class="post-header-container">
-  
   <svg viewBox="0 0 1800 107" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 106H1800" stroke="white" />
     <path d="M0 86H1800" stroke="white" stroke-width="3" />
@@ -36,22 +36,7 @@
     <LangPicker {lang} />
   </div>
 
-  <nav>
-    <a href={lang == "en" ? "/" : "/fr"}>
-      <svg viewBox="0 0 24 24" fill="#000000">
-        <path d="M0 0h24v24H0V0z" fill="none" />
-        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
-      </svg>
-    </a>
-    {#each useLang2.posts as entry, i}
-      <a href={lang != langs[0] ? "/" + lang + "/posts/" + i : "/posts/" + i} class={i == post ? "active" : ""}>
-        {i}
-      </a>
-    {/each}
-    <p href={""} class="ghost" title={useLang.soon}>
-      {useLang2.posts.length}
-    </p>
-  </nav>
+  <PostNav {post} {lang}></PostNav>
 </div>
 
 <style lang="scss">
@@ -59,7 +44,6 @@
     max-width: 100vw;
     & .links {
       padding: 1rem 1.5rem;
-      border-bottom: 1px solid white;
       & a {
         font-weight: 700;
         text-decoration: none;
@@ -72,7 +56,7 @@
       border-bottom: 1px solid white;
       display: flex;
       flex-direction: row;
-      & svg{
+      & svg {
         width: 70%;
       }
       & a,
@@ -89,7 +73,7 @@
         margin-right: 1rem;
         filter: drop-shadow(0px 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1));
         transition: 0.25s ease transform, 1s ease background-color;
-        &:not(.ghost,.active):hover{
+        &:not(.ghost, .active):hover {
           transform: scale(1.1);
         }
       }

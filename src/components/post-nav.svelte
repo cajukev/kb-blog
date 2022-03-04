@@ -21,14 +21,14 @@
 
 <div class="post-footer-container">
   <nav>
-    <a href={lang == "en" ? "/" : "/fr"}>
-      <svg viewBox="0 0 24 24" fill="#000000">
+    <a href={lang == "en" ? "/" : "/fr"} title={useLang.return}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
         <path d="M0 0h24v24H0V0z" fill="none" />
-        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+        <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
       </svg>
     </a>
     {#each useLang2.posts as entry, i}
-      <a href={lang != langs[0] ? "/" + lang + "/posts/" + i : "/posts/" + i} class={i == post ? "active" : ""}>
+      <a href={lang != langs[0] ? "/" + lang + "/posts/" + i : "/posts/" + i} class={i == post ? "active" : ""} title={entry.title}>
         {i}
       </a>
     {/each}
@@ -44,6 +44,7 @@
     & nav {
       padding: 0.5rem 1.5rem;
       border-top: 1px solid white;
+      border-bottom: 1px solid white;
       display: flex;
       flex-direction: row;
       & svg {

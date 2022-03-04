@@ -76,17 +76,19 @@
         &.c2 {
           width: 30rem;
           height: 30rem;
-          bottom: 0%;
+          top: calc(100% - 30rem);
           right: 0%;
           animation: grow2 5s linear forwards;
           transform-origin: center;
           @media (min-width:$breakpoint-2) {
             width: 40rem;
             height: 40rem;
+            top: calc(100% - 40rem);
           }
           @media (min-width:$breakpoint-3) {
             width: 50rem;
             height: 50rem;
+            top: calc(100% - 50rem);
           }
         }
       }

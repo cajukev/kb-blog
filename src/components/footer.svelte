@@ -14,7 +14,6 @@
     align-items: center;
     font-size: $mini-font-size;
     padding: 1rem 0 0.25rem $page-ml;
-    border-top: 1px solid white;
     & p{
       padding-top: 0.5rem;
     }
