@@ -20,7 +20,7 @@
     <div class="post">
       <div class="showcase">
         <p class="part">{post.part}</p>
-        <p class="title">{post.title}</p>
+        <h2 class="title">{post.title}</h2>
         <p class="tags">{post.tags}</p>
       </div>
       <div class="preview">
@@ -50,6 +50,7 @@
         & .title {
           margin-top: 0.25rem;
           font-size: $subheader-font-size;
+          font-weight: 400;
         }
         & .tags {
           margin-top: 0.5rem;

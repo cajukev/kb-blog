@@ -87,7 +87,7 @@
 </p>
 <p class="content-spacing">
   I plan on sharing knowledge and concrete examples on all of these concepts throughout this blog starting with the next
-  post which will cover my
+  post in which I will go over my process for image optimization.
 </p>
 
 <!-- General Post Styles is app.scss -->

@@ -67,7 +67,6 @@ $breakpoint-6: 1536px;
   background-color: $bg-color;
   font-family: $other-font;
   font-size: $base-font-size;
-  line-height: 140%;
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -84,7 +83,9 @@ $breakpoint-6: 1536px;
 :global(a) {
   color: black;
 }
-
+:global(p) {
+  line-height: 150%;
+}
 :global(h1) {
   font-family: $header-font;
   font-weight: 700;
@@ -125,12 +126,12 @@ $breakpoint-6: 1536px;
   & :global(h3) {
     font-size: $base-font-size;
   }
-  & :global(p.media-info){
+  & :global(p.media-info) {
     font-size: $mini-font-size;
     text-align: center;
     margin-top: 0.25rem;
   }
-  & :global(.content-spacing){
+  & :global(.content-spacing) {
     margin-top: 1.5rem;
   }
 }
@@ -153,6 +154,10 @@ $breakpoint-6: 1536px;
 }
 
 @keyframes lineIn {
-  0% { stroke-dashoffset: 0 }
-  100% { stroke-dashoffset:-708.246 }
-} 
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -708.246;
+  }
+}

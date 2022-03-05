@@ -51,14 +51,15 @@
       }
     }
     @media (min-width: $breakpoint-3) {
+      
       & .text {
         margin-top: 1rem;
         padding: 0 $page-ml;
         & h1 {
-          margin-top: 0.5rem;
+          margin-top: 0rem;
         }
         & p {
-          margin-top: 1rem;
+          margin-top: 0.5rem;
         }
       }
     }
