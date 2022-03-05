@@ -48,7 +48,7 @@
     overflow: hidden;
     & .circles {
       position: fixed;
-      overflow: hidden;
+      overflow: visible;
       top: 0;
       left: 0;
       width: 100%;
@@ -76,6 +76,7 @@
         &.c2 {
           width: 30rem;
           height: 30rem;
+
           top: calc(100% - 30rem);
           right: 0%;
           animation: grow2 5s linear forwards;
