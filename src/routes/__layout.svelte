@@ -10,18 +10,6 @@
   import PageTransition from "../components/utils/PageTransition.svelte";
   export let url;
 
-  onMount(() => {
-    /* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    let vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-    window.addEventListener("resize", () => {
-      // We execute the same script as before
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    });
-  });
 </script>
 
 <div class="layout">
@@ -130,7 +118,7 @@
       z-index: -1;
       & .circle {
         background: radial-gradient(50% 50% at 50% 50%, #bcbce6 1.04%, rgba(188, 188, 230, 0) 100%);
-        position: absolute;
+        position: fixed;
         &.c1 {
           width: 30rem;
           height: 30rem;
