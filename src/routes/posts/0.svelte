@@ -5,6 +5,11 @@
   let text = en.posts[0];
 </script>
 
+<svelte:head>
+  <title>{text.title}</title>
+  <meta name="description" content={text.intro}/>
+</svelte:head>
+
 <div class="post-container">
   <p class="part">{text.part}</p>
   <h2>{text.title}</h2>

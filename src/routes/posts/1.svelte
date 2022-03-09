@@ -5,6 +5,11 @@
   let text = en.posts[1];
 </script>
 
+<svelte:head>
+  <title>{text.title}</title>
+  <meta name="description" content={text.intro}/>
+</svelte:head>
+
 <div class="post-container">
   <p class="part">{text.part}</p>
   <h2>{text.title}</h2>
@@ -13,8 +18,8 @@
     easily and quickly, with better performance than 99.9% of today's 
     websites. -->
   <p>{text.intro}</p>
-  <div style="padding-top:30%" class="img-container content-spacing">
-    <img src="/KB.svg" />
+  <div style="padding-top:33%" class="img-container content-spacing">
+    <img src="/1/scores-800.jpg" alt="The mobile lighthouse scores of this site"/>
   </div>
   <p class="media-info">The mobile lighthouse scores of this site</p>
 </div>

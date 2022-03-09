@@ -29,21 +29,24 @@
     <path d="M0 26H1800" stroke="white" stroke-width="9" />
     <path d="M0 6H1800" stroke="white" stroke-width="11" />
   </svg>
+  <div class="langPicker">
+    <LangPicker {lang} />
+  </div>
+
   <div class="links">
     <a href={lang == "en" ? "/" : "/fr"}>
       {useLang.title}
     </a>
-    <LangPicker {lang} />
   </div>
 
-  <PostNav {post} {lang}></PostNav>
+  <PostNav {post} {lang} />
 </div>
 
 <style lang="scss">
   .post-header-container {
     max-width: 100vw;
     & .links {
-      padding: 1rem 1.5rem;
+      padding: 0.5rem 1.5rem 1rem 1.5rem;
       & a {
         font-weight: 700;
         text-decoration: none;
@@ -51,40 +54,11 @@
         font-size: $subheader-font-size;
       }
     }
-    & nav {
-      padding: 0.5rem 1.5rem;
-      border-bottom: 1px solid white;
-      display: flex;
-      flex-direction: row;
-      & svg {
-        width: 70%;
-      }
-      & a,
-      p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: $subheader-font-size;
-        text-decoration: none;
-        border-radius: 50%;
-        margin-right: 1rem;
-        filter: drop-shadow(0px 0.2rem 0.2rem rgba($color: #000000, $alpha: 0.1));
-        transition: 0.25s ease transform, 1s ease background-color;
-        &:not(.ghost, .active):hover {
-          transform: scale(1.1);
-        }
-      }
-      & a.active {
-        background-color: $accent-color;
-        pointer-events: none;
-      }
-      & p.ghost {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
+    & .langPicker{
+      display: block;
+      margin-left: 1.5rem;
+      padding-top: 0.5rem;
+      
     }
   }
 </style>

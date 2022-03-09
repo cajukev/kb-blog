@@ -14,7 +14,7 @@
         "intro": "I present myself as an modern web developer. This means that I use the technologies and techniques required to create websites easily and quickly, with better performance than 99.9% of today's websites."
       }
     ],
-    "a":"Read more",
+    "a":"Read blog post",
     "soon":"Coming soon",
     "part":"Part"
   },
@@ -24,16 +24,16 @@
         "part": "Introduction",
         "title": "Qui suis-je comme développeur?",
         "tags": "Autre qu'un gars vraiment cool",
-        "intro": "Je me présente comme développeur web moderne. Celà veut dire que j'utilise les technologies et techniques requises pour créer des sites web facilement et rapidement, plus performants que 99.9% des sites aujourd'hui."
+        "intro": "Bonjour à tous ! Je m'appelle Kevin Brousseau et je suis un développeur web. Il y a quatre ans, j'ai commencé à apprendre le développement web moderne et dans ce blog, je vais écrire sur les choses que j'ai apprises tout au long de ces années formatrices. Lisez la suite et j'espère que je pourrai vous apprendre une chose ou deux..."
       },
       {
         "part": "Partie 1",
-        "title": "What is an independant developer?",
+        "title": "Qu'est-ce que le développement web moderne?",
         "tags": "UX  /  UI   /  DEVELOPPEMENT  /  SEO",
-        "intro": "I present myself as an independant developer..."
+        "intro": "Je me présente comme développeur web moderne. Celà veut dire que j'utilise les technologies et techniques requises pour créer des sites web facilement et rapidement, plus performants que 99.9% des sites aujourd'hui."
       }
     ],
-    "a":"Lire plus",
+    "a":"Lire la publication",
     "soon":"Bientôt",
     "part":"Partie"
   }

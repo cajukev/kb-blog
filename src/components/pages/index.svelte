@@ -1,22 +1,27 @@
 <script>
   export let lang;
   const langs = ["en", "fr"];
-  import { en, fr } from "./posts.json";
+  import { en, fr } from "../header.json";
+  import { en as en2, fr as fr2 } from "./posts.json";
+  import Header from "../header.svelte";
   let useLang;
+  let useLang2;
   switch (lang) {
     case "fr":
       useLang = fr;
+      useLang2 = fr2;
       break;
     case "en":
       useLang = en;
+      useLang2 = en2;
       break;
   }
-  import Header from "../header.svelte";
+  
 </script>
 
 <Header {lang} page={""} />
 <main>
-  {#each useLang.posts as post, i}
+  {#each useLang2.posts as post, i}
     <div class="post">
       <div class="showcase">
         <p class="part">{post.part}</p>
@@ -25,14 +30,14 @@
       </div>
       <div class="preview">
         <p class="intro">{post.intro}</p>
-        <a href={(lang != langs[0]  ? lang+"/posts/"+i : "/posts/"+i) }>{useLang.a}</a>
+        <a href={(lang != langs[0]  ? lang+"/posts/"+i : "/posts/"+i) }>{useLang2.a}</a>
       </div>
     </div>
   {/each}
   <div class="post">
     <div class="showcase">
-      <p class="part">{useLang.part + " " + useLang.posts.length}</p>
-      <p class="title">{useLang.soon}</p>
+      <p class="part">{useLang2.part + " " + useLang2.posts.length}</p>
+      <p class="title">{useLang2.soon}</p>
     </div>
   </div>
 </main>

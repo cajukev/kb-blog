@@ -28,6 +28,10 @@ select#language{
   font-size: 1rem;
   font-family: $other-font;
   font-weight: 700;
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  border: 1px solid white;
+  background-color: white;
 }
 </style>
 
